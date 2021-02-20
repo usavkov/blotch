@@ -1,1 +1,2 @@
-# blotch
+# Blotch
+## GH-Pages
