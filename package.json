@@ -1,0 +1,19 @@
+{
+  "name": "blotch",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usavkov/blotch.git"
+  },
+  "author": "Yuri Savkov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/usavkov/blotch/issues"
+  },
+  "homepage": "https://github.com/usavkov/blotch#readme"
+}
