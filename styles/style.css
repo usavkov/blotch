@@ -1,4 +1,3 @@
-@import '../node_modules/modern-normalize/modern-normalize.css';
 :root {
   --header--height: 30px;
   --main--height: calc(100vh - var(--header--height) - var(--footer--height));
