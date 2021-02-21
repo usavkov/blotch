@@ -1,0 +1,77 @@
+@import '../node_modules/modern-normalize/modern-normalize.css';
+:root {
+  --header--height: 30px;
+  --main--height: calc(100vh - var(--header--height) - var(--footer--height));
+  --tools-panel--width: 150px;
+  --footer--height: 20px;
+  --tool-size: 10px;
+}
+
+body {
+  background-color: lavender;
+  display: grid;
+  grid-template-rows: var(--header--height) 1fr var(--footer--height);
+}
+
+header {
+  height: var(--header--height);
+  background-color: #3a3a3a;
+}
+
+main {
+  height: var(--main--height);
+  display: grid;
+  justify-content: center;
+  grid-template-columns: var(--tools-panel--width) 1fr;
+  grid-template-rows: 1fr;
+}
+
+.tools-panel {
+  display: grid;
+  background-color: #3a3a3a;
+  gap: 2px;
+}
+
+.tools {
+  display: grid;
+  list-style: none;
+  gap: 20px;
+}
+
+.tool {
+  width: var(--tool-size);
+  height: var(--tool-size);
+  cursor: pointer;
+}
+
+.fill {
+  background-color: lightgray;
+}
+
+.stroke {
+  background-color: lightgray;
+}
+
+.color {
+  cursor: pointer;
+}
+
+.clear {
+  cursor: pointer;
+}
+
+.workspace {
+  display: grid;
+  background-color: #9c9494;
+}
+
+canvas {
+  margin: auto;
+  background-color: white;
+}
+
+footer {
+  background-color: #636060;
+}
+
+/*# sourceMappingURL=style.css.map */

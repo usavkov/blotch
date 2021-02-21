@@ -1,0 +1,87 @@
+// Colors
+$body--background-color: lavender;
+$header--background-color: rgb(58, 58, 58);
+$tools-panel--background-color: rgb(58, 58, 58);
+$tool-section--background-color: lightgray;
+$workspace--background-color: rgb(156, 148, 148);
+$footer--background-color: rgb(99, 96, 96);
+// -----
+
+
+:root {
+    --header--height: 30px;
+    --main--height: calc(100vh - var(--header--height) - var(--footer--height));
+    --tools-panel--width: 150px;
+    --footer--height: 20px;
+    --tool-size: 10px;
+}
+
+body {
+    background-color: $body--background-color;
+    display: grid;
+    grid-template-rows: var(--header--height) 1fr var(--footer--height);
+}
+
+header {
+    height: var(--header--height);
+    background-color: $header--background-color;
+}
+
+
+main {
+    height: var(--main--height);
+    display: grid;
+    justify-content: center;
+    grid-template-columns: var(--tools-panel--width) 1fr;
+    grid-template-rows: 1fr;
+}
+
+.tools-panel {
+    display: grid;
+    background-color: $tools-panel--background-color;
+    gap: 2px;
+}
+
+.tools {
+    display: grid;
+    list-style: none;
+    gap: 20px;
+}
+
+.tool {
+    width: var(--tool-size);
+    height: var(--tool-size);
+    cursor: pointer;
+}
+
+.fill {
+    background-color: $tool-section--background-color;
+}
+
+.stroke {
+    background-color: $tool-section--background-color;
+}
+
+.color {
+    cursor: pointer;
+}
+
+.clear {
+    cursor: pointer;
+}
+
+.workspace {
+    display: grid;
+    background-color: $workspace--background-color;
+}
+
+canvas {
+    // width: calc(100vw - var(--tools-panel--width));
+    // height: var(--main--height);
+    margin: auto;
+    background-color: white;
+}
+
+footer {
+    background-color: $footer--background-color;
+}
