@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/usavkov/blotch/issues"
   },
-  "homepage": "https://github.com/usavkov/blotch#readme"
+  "homepage": "https://github.com/usavkov/blotch#readme",
+  "dependencies": {
+    "modern-normalize": "^1.0.0"
+  }
 }
